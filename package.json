@@ -1,10 +1,13 @@
 {
+  "homepage": "http://sean-glitch.github.io/tra",
   "name": "glitch-blank-react",
   "version": "0.0.2",
   "description": "A simple React app built with Vite and React.",
   "main": "server.js",
   "scripts": {
     "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "serve": "vite preview"
   },
